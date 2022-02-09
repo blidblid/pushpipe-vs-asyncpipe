@@ -1,0 +1,18 @@
+<button (click)="randomizeSub.next()">Randomize</button>
+
+<pre>
+Use Angular Chrome extension to measure performance.
+
+PushPipe is ~5 times as slow as AsyncPipe, even with <b>50 000</b>
+parent bindings.
+</pre>
+
+<div style="display: none">
+  <!-- <div *ngFor="let number of numbers">
+    {{number | async}}
+  </div> -->
+
+  <div *ngFor="let number of numbers">
+    {{number | push}}
+  </div>
+</div>
